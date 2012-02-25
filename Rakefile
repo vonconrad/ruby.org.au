@@ -26,3 +26,10 @@ namespace :build do
 
   task :all => [:stylesheets, :pages]
 end
+
+task :deploy do
+  gh_pages = `git show-ref -s refs/heads/gh-pages`.strip
+  site = `git ls-tree -d HEAD output | awk '{print $3}'`.strip
+  new_commit = `echo 'Update site' | git commit-tree #{site} -p #{gh_pages}`.strip
+  `git update-ref refs/heads/gh-pages #{new_commit}`
+end
