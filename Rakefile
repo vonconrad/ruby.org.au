@@ -16,7 +16,7 @@ namespace :build do
     layout = Tilt.new('layout.html.erb')
     PAGES.each do |template|
       puts "Rendering pages/#{template}"
-      File.open("output/#{template}.html", "w") do |f|
+      File.open("site/#{template}.html", "w") do |f|
         f << layout.render do
           Tilt.new("pages/#{template}.html.erb").render
         end
@@ -29,7 +29,7 @@ end
 
 task :deploy do
   gh_pages = `git show-ref -s refs/heads/gh-pages`.strip
-  site = `git ls-tree -d HEAD output | awk '{print $3}'`.strip
+  site = `git ls-tree -d HEAD site | awk '{print $3}'`.strip
   new_commit = `echo 'Update site' | git commit-tree #{site} -p #{gh_pages}`.strip
   `git update-ref refs/heads/gh-pages #{new_commit}`
 end
