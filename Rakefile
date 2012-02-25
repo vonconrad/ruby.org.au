@@ -8,10 +8,12 @@ PAGES = %w(index)
 task :default => 'build:all'
 
 namespace :build do
+  desc "Build the stylesheets, outputting to ./site/css"
   task :stylesheets do
     sh 'compass compile -c compass-config.rb'
   end
 
+  desc "Build the page templates, outputting to ./site"
   task :pages do
     layout = Tilt.new('layout.html.erb')
     PAGES.each do |template|
@@ -24,12 +26,13 @@ namespace :build do
     end
   end
 
+  desc "Build all the dynamic bits of the site"
   task :all => [:stylesheets, :pages]
 end
 
+desc "Commit the latest version of the site to the gh-pages branch"
 task :deploy do
-  gh_pages = `git show-ref -s refs/heads/gh-pages`.strip
   site = `git ls-tree -d HEAD site | awk '{print $3}'`.strip
-  new_commit = `echo 'Update site' | git commit-tree #{site} -p #{gh_pages}`.strip
+  new_commit = `echo 'Update site' | git commit-tree #{site} -p refs/heads/gh-pages`.strip
   `git update-ref refs/heads/gh-pages #{new_commit}`
 end
