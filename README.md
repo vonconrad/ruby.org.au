@@ -11,7 +11,7 @@ Want to help? Sweet! We like help. Pull requests are very welcome. Here's how
 to get started:
 
 * Fork the repository
-* Make some changes (see _Build instructions_ below)
+* Make some changes (see _Build Instructions_ below)
 * Push your changes to your fork
 * Open a pull request
 
@@ -24,7 +24,7 @@ guidelines:
 * Some pull requests won't get merged. All changes are reviewed by a committee
   member, and sometimes changes don't fit with the organisation's vision.
 
-## Build instructions
+## Build Instructions
 
 Building and deploying the site is done via rake tasks:
 
@@ -32,16 +32,45 @@ Building and deploying the site is done via rake tasks:
 * `rake deploy` copies the _committed_ versions of all files in `/site` to the
   root of the `gh-pages` branch
 
-So, your normal process would look something like this:
+There's a `Guardfile`, which makes development convenient - just run `bundle
+exec guard` to have it watch the pages and stylesheets, automatically
+rebuilding the site any time you save a file.
+
+As a contributor, your workflow would look something like this:
 
 ```
-# ... Edit some content in /pages
-git add pages/the-awesome-page.html.erb
+# Assuming `upstream` is the name of the git remote for the official
+# ruby.org.au repository, and `origin` is your own fork.
+
+# Make sure you're building on the most up-to-date version
+git fetch upstream && git merge origin/upstream
+# Do some edits
+# ...
+# If you're not running guard, build the site
 rake build:all
-git add site
+# Once you're happy, commit both the source files and the output:
+git add pages/my-awesome-page.html.erb
+git add site/my-awesome-page.html
 git commit -m "Add an awesome page"
-rake deploy
-git push origin
-# BOOM!
+# Push your changes
+git push origin master
 ```
 
+## Deploying (for maintainers)
+
+As a maintainer, your deploy workflow will look something like this:
+
+```
+rake build:all
+# Check for any changes in 'site'. If there are, read over them, and commit.
+git add site
+git commit -m "Committing changes to the generated site"
+# Copy the subtree 'site' to the root of the 'gh-pages' branch
+rake deploy
+# SHIPIT
+git push origin gh-pages
+```
+
+If there were changes in `site`, someone forgot to commit the generated output
+from a change they made, or they changed the output by hand. This is generally
+not a good situation, but mistakes happen...
