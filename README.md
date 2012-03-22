@@ -10,10 +10,10 @@ The `ruby.org.au` site is a static site hosted with Github Pages.
 Want to help? Sweet! We like help. Pull requests are very welcome. Here's how
 to get started:
 
-* Fork the repository
-* Make some changes (see _Build Instructions_ below)
-* Push your changes to your fork
-* Open a pull request
+1. Fork the repository
+2. Make some changes (see _Build Instructions_ below)
+3. Push your changes to your fork
+4. Open a pull request
 
 When you open a pull request, we'd appreciate if you follow some basic
 guidelines:
