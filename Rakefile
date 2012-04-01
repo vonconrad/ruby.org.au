@@ -12,6 +12,12 @@ namespace :build do
   task :stylesheets do
     sh 'compass compile -c compass-config.rb'
   end
+  
+  desc "Build the javascripts, outputting to ./site/js"
+  task :javascripts do
+    sh 'mkdir -p ./site/js'
+    sh 'cp -r javascripts/**/*.js ./site/js'
+  end
 
   desc "Build the page templates, outputting to ./site"
   task :pages do
@@ -27,7 +33,7 @@ namespace :build do
   end
 
   desc "Build all the dynamic bits of the site"
-  task :all => [:stylesheets, :pages]
+  task :all => [:stylesheets, :javascripts, :pages]
 end
 
 desc "Commit the latest version of the site to the gh-pages branch"
