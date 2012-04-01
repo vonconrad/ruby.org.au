@@ -15,12 +15,12 @@ namespace :build do
 
   desc "Build the page templates, outputting to ./site"
   task :pages do
-    layout = Tilt.new('layout.html.erb')
+    layout = Tilt.new('layout.html.haml')
     PAGES.each do |template|
       puts "Rendering pages/#{template}"
       File.open("site/#{template}.html", "w") do |f|
         f << layout.render do
-          Tilt.new("pages/#{template}.html.erb").render
+          Tilt.new("pages/#{template}.html.haml").render
         end
       end
     end
