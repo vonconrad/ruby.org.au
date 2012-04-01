@@ -18,6 +18,11 @@ namespace :build do
     sh 'mkdir -p ./site/js'
     sh 'cp -r javascripts/*.js ./site/js'
   end
+  
+  desc "Setup the CNAME"
+  task :cname do
+    sh 'cp CNAME ./site/'
+  end
 
   desc "Build the page templates, outputting to ./site"
   task :pages do
@@ -33,7 +38,7 @@ namespace :build do
   end
 
   desc "Build all the dynamic bits of the site"
-  task :all => [:stylesheets, :javascripts, :pages]
+  task :all => [:stylesheets, :javascripts, :pages, :cname]
 end
 
 desc "Commit the latest version of the site to the gh-pages branch"
