@@ -67,66 +67,86 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 23, ../../stylesheets/screen.scss */
+/* line 35, ../../stylesheets/screen.scss */
 body {
   width: 960px;
   margin: 200px auto 0 auto;
 }
 
-/* line 28, ../../stylesheets/screen.scss */
+/* line 40, ../../stylesheets/screen.scss */
 body * {
   font-family: "Heilvetica", "Helvetica Neue", "Arial";
   font-weight: lighter;
   line-height: 1.5em;
 }
 
-/* line 34, ../../stylesheets/screen.scss */
+/* line 46, ../../stylesheets/screen.scss */
+header {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 48, ../../stylesheets/screen.scss */
 h1, .h1 {
   width: 300px;
   margin-left: 20px;
   float: left;
   clear: both;
+  overflow: hidden;
+  *zoom: 1;
   text-indent: -119988px;
   overflow: hidden;
   text-align: left;
-  background-image: url('/images/ruby-australia-logo.png?1333264006');
+  background-image: url('/images/ruby-australia-logo.png?1333264740');
   background-repeat: no-repeat;
   background-position: 50% 50%;
   width: 124px;
   height: 129px;
 }
 
-/* line 41, ../../stylesheets/screen.scss */
+/* line 55, ../../stylesheets/screen.scss */
 h2, .h2 {
   width: 610px;
   margin-left: 10px;
   margin-right: 20px;
   float: right;
+  overflow: hidden;
+  *zoom: 1;
   font-size: 1em;
 }
 
-/* line 46, ../../stylesheets/screen.scss */
+/* line 60, ../../stylesheets/screen.scss */
 nav {
   width: 300px;
   margin-left: 20px;
   float: left;
   clear: both;
+  overflow: hidden;
+  *zoom: 1;
 }
 
-/* line 50, ../../stylesheets/screen.scss */
+/* line 64, ../../stylesheets/screen.scss */
 section {
   width: 610px;
   margin-left: 10px;
   margin-right: 20px;
   float: right;
+  overflow: hidden;
+  *zoom: 1;
 }
 
-/* line 54, ../../stylesheets/screen.scss */
+/* line 68, ../../stylesheets/screen.scss */
 footer {
+  width: 920px;
+  margin-left: 10px;
+  margin-right: 10px;
   clear: both;
+  float: left;
+  margin-top: 2em;
+  background-color: palegoldenrod;
 }
 
-/* line 58, ../../stylesheets/screen.scss */
+/* line 74, ../../stylesheets/screen.scss */
 nav * {
   display: block;
 }
