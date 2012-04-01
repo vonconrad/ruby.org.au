@@ -4,3 +4,46 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+
+@mixin left-column {
+    width: 300px;
+    margin-left: 20px;
+    float: left;
+    clear: both;
+}
+
+@mixin right-column {
+    width: 610px;
+    margin-left: 10px;
+    margin-right: 20px;
+    float: right;
+}
+
+body {
+    width: 960px;
+    margin: 200px auto 0 auto;
+}
+
+h1, .h1 {
+    @include left-column;
+    background-image: url('/images/ruby-australia-logo.png');
+    width: 100px;
+    height: 150px;
+}
+
+h2, .h2 {
+    @include right-column;
+    font-size: 1em;
+}
+
+nav {
+    @include left-column;
+}
+
+section {
+    @include right-column;
+}
+
+footer {
+    clear: both;
+}
