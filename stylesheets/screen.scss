@@ -4,6 +4,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
 @import "compass/reset";
+@import "compass/typography/text/replacement";
 
 @mixin left-column {
     width: 300px;
@@ -24,11 +25,17 @@ body {
     margin: 200px auto 0 auto;
 }
 
+body * {
+    font-family: "Heilvetica", "Helvetica Neue", "Arial";
+    font-weight: lighter;
+    line-height: 1.5em;
+}
+
 h1, .h1 {
     @include left-column;
-    background-image: url('/images/ruby-australia-logo.png');
-    width: 100px;
-    height: 150px;
+    @include replace-text("ruby-australia-logo.png");
+    width: 124px;
+    height: 129px;
 }
 
 h2, .h2 {
@@ -46,4 +53,8 @@ section {
 
 footer {
     clear: both;
+}
+
+nav * {
+    display: block;
 }

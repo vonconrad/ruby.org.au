@@ -67,24 +67,36 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
-/* line 22, ../../stylesheets/screen.scss */
+/* line 23, ../../stylesheets/screen.scss */
 body {
   width: 960px;
   margin: 200px auto 0 auto;
 }
 
-/* line 27, ../../stylesheets/screen.scss */
+/* line 28, ../../stylesheets/screen.scss */
+body * {
+  font-family: "Heilvetica", "Helvetica Neue", "Arial";
+  font-weight: lighter;
+  line-height: 1.5em;
+}
+
+/* line 34, ../../stylesheets/screen.scss */
 h1, .h1 {
   width: 300px;
   margin-left: 20px;
   float: left;
   clear: both;
-  background-image: url("/images/ruby-australia-logo.png");
-  width: 100px;
-  height: 150px;
+  text-indent: -119988px;
+  overflow: hidden;
+  text-align: left;
+  background-image: url('/images/ruby-australia-logo.png?1333264006');
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  width: 124px;
+  height: 129px;
 }
 
-/* line 34, ../../stylesheets/screen.scss */
+/* line 41, ../../stylesheets/screen.scss */
 h2, .h2 {
   width: 610px;
   margin-left: 10px;
@@ -93,7 +105,7 @@ h2, .h2 {
   font-size: 1em;
 }
 
-/* line 39, ../../stylesheets/screen.scss */
+/* line 46, ../../stylesheets/screen.scss */
 nav {
   width: 300px;
   margin-left: 20px;
@@ -101,7 +113,7 @@ nav {
   clear: both;
 }
 
-/* line 43, ../../stylesheets/screen.scss */
+/* line 50, ../../stylesheets/screen.scss */
 section {
   width: 610px;
   margin-left: 10px;
@@ -109,7 +121,12 @@ section {
   float: right;
 }
 
-/* line 47, ../../stylesheets/screen.scss */
+/* line 54, ../../stylesheets/screen.scss */
 footer {
   clear: both;
+}
+
+/* line 58, ../../stylesheets/screen.scss */
+nav * {
+  display: block;
 }

@@ -18,6 +18,12 @@ namespace :build do
     sh 'mkdir -p ./site/js'
     sh 'cp -r javascripts/*.js ./site/js'
   end
+
+  desc "Copy the static images to ./site/images"
+  task :images do
+    sh 'mkdir -p ./site/images'
+    sh 'cp -r images/* ./site/images'
+  end
   
   desc "Setup the CNAME"
   task :cname do
@@ -38,7 +44,7 @@ namespace :build do
   end
 
   desc "Build all the dynamic bits of the site"
-  task :all => [:stylesheets, :javascripts, :pages, :cname]
+  task :all => [:stylesheets, :javascripts, :pages, :cname, :images]
 end
 
 desc "Commit the latest version of the site to the gh-pages branch"
