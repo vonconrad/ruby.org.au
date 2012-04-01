@@ -5,5 +5,5 @@ end
 
 guard :shell do
 #guard 'rake', :task => 'build:pages' do
-  watch(%r{^pages/.+\.html\.erb}) { `rake build:pages` }
+  watch(%r{^pages/.+\.html\.haml}) { `rake build:pages` }
 end
