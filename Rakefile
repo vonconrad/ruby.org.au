@@ -16,7 +16,7 @@ namespace :build do
   desc "Build the javascripts, outputting to ./site/js"
   task :javascripts do
     sh 'mkdir -p ./site/js'
-    sh 'cp -r javascripts/**/*.js ./site/js'
+    sh 'cp -r javascripts/*.js ./site/js'
   end
 
   desc "Build the page templates, outputting to ./site"
