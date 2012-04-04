@@ -3,7 +3,7 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
-@import "compass/reset";
+@import "normalize";
 @import "compass/utilities";
 @import "compass/css3";
 @import "compass/typography/text/replacement";
@@ -34,7 +34,7 @@
 
 body {
     width: 960px;
-    margin: 200px auto 0 auto;
+    margin: 100px auto 0 auto;
 }
 
 body * {
@@ -59,10 +59,15 @@ h2, .h2 {
 
 nav {
     @include left-column;
+    ul { padding-left: 0; }
 }
 
 section {
     @include right-column;
+}
+
+#meetups a {
+  display: block;
 }
 
 footer {
