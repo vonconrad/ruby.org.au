@@ -449,3 +449,12 @@ footer {
 #members article header, #members article div {
   margin-right: 160px;
 }
+/* line 103, ../../stylesheets/screen.scss */
+#members article h3, #members article p {
+  margin-top: 0;
+}
+/* line 104, ../../stylesheets/screen.scss */
+#members article h3 {
+  font-size: 1.25em;
+  margin-bottom: 0.2em;
+}
