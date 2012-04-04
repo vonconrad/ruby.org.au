@@ -339,15 +339,22 @@ textarea {
 body {
   width: 960px;
   margin: 100px auto 0 auto;
+  color: #333333;
 }
 
-/* line 40, ../../stylesheets/screen.scss */
+/* line 42, ../../stylesheets/screen.scss */
 body * {
   font-family: "Heilvetica", "Helvetica Neue", "Helvetica", "Arial";
   line-height: 1.5em;
 }
 
-/* line 45, ../../stylesheets/screen.scss */
+/* line 47, ../../stylesheets/screen.scss */
+header {
+  overflow: hidden;
+  *zoom: 1;
+}
+
+/* line 51, ../../stylesheets/screen.scss */
 h1, .h1 {
   width: 300px;
   margin-left: 20px;
@@ -365,7 +372,7 @@ h1, .h1 {
   height: 129px;
 }
 
-/* line 52, ../../stylesheets/screen.scss */
+/* line 58, ../../stylesheets/screen.scss */
 h2, .h2 {
   width: 610px;
   margin-left: 10px;
@@ -376,7 +383,7 @@ h2, .h2 {
   font-size: 1em;
 }
 
-/* line 57, ../../stylesheets/screen.scss */
+/* line 63, ../../stylesheets/screen.scss */
 nav {
   width: 300px;
   margin-left: 20px;
@@ -385,12 +392,16 @@ nav {
   overflow: hidden;
   *zoom: 1;
 }
-/* line 59, ../../stylesheets/screen.scss */
+/* line 65, ../../stylesheets/screen.scss */
 nav ul {
   padding-left: 0;
 }
+/* line 67, ../../stylesheets/screen.scss */
+nav * {
+  display: block;
+}
 
-/* line 62, ../../stylesheets/screen.scss */
+/* line 72, ../../stylesheets/screen.scss */
 section {
   width: 610px;
   margin-left: 10px;
@@ -400,12 +411,12 @@ section {
   *zoom: 1;
 }
 
-/* line 66, ../../stylesheets/screen.scss */
+/* line 76, ../../stylesheets/screen.scss */
 #meetups a {
   display: block;
 }
 
-/* line 70, ../../stylesheets/screen.scss */
+/* line 80, ../../stylesheets/screen.scss */
 footer {
   width: 920px;
   margin-left: 10px;
@@ -414,9 +425,4 @@ footer {
   float: left;
   margin-top: 2em;
   background-color: palegoldenrod;
-}
-
-/* line 76, ../../stylesheets/screen.scss */
-nav * {
-  display: block;
 }

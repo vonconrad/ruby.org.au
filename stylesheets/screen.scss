@@ -35,11 +35,17 @@
 body {
     width: 960px;
     margin: 100px auto 0 auto;
+
+    color: #333333;
 }
 
 body * {
     font-family: "Heilvetica", "Helvetica Neue", "Helvetica", "Arial";
     line-height: 1.5em;
+}
+
+header {
+  @include clearfix;
 }
 
 h1, .h1 {
@@ -57,6 +63,10 @@ h2, .h2 {
 nav {
     @include left-column;
     ul { padding-left: 0; }
+
+    * {
+        display: block;
+    }
 }
 
 section {
@@ -71,8 +81,4 @@ footer {
     @include both-columns;
     margin-top: 2em;
     background-color: palegoldenrod;
-}
-
-nav * {
-    display: block;
 }
