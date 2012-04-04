@@ -58,6 +58,11 @@ git push origin master
 
 ## Deploying (for maintainers)
 
+_NOTE_ make sure to have a local branch `gh-pages` tracking `origin/gh-pages`.
+This can be accomplished by `git checkout gh-pages`, which on recent versions
+of git will automatically setup a tracking branch if there's a remote branch
+of the same name.
+
 As a maintainer, your deploy workflow will look something like this:
 
 ```
@@ -65,6 +70,7 @@ rake build:all
 # Check for any changes in 'site'. If there are, read over them, and commit.
 git add site
 git commit -m "Committing changes to the generated site"
+git push origin master
 # Copy the subtree 'site' to the root of the 'gh-pages' branch
 rake deploy
 # SHIPIT
