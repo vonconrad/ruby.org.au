@@ -111,3 +111,26 @@ footer {
     }
   }
 }
+
+form {
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: none;
+  padding: 0 0 1.5em 0;
+}
+
+label {
+  display: inline-block;
+  float: left;
+  clear: both;
+  width: 150px;
+  margin-right: 10px;
+}
+
+input {
+  margin-bottom: 0.5em;
+  width: 300px;
+}

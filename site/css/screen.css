@@ -464,3 +464,30 @@ footer p {
   font-size: 1.25em;
   margin-bottom: 0.2em;
 }
+
+/* line 115, ../../stylesheets/screen.scss */
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 120, ../../stylesheets/screen.scss */
+fieldset {
+  border: none;
+  padding: 0 0 1.5em 0;
+}
+
+/* line 125, ../../stylesheets/screen.scss */
+label {
+  display: inline-block;
+  float: left;
+  clear: both;
+  width: 150px;
+  margin-right: 10px;
+}
+
+/* line 133, ../../stylesheets/screen.scss */
+input {
+  margin-bottom: 0.5em;
+  width: 300px;
+}
