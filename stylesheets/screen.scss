@@ -38,12 +38,9 @@ body {
 }
 
 body * {
-    font-family: "Heilvetica", "Helvetica Neue", "Arial";
-    font-weight: lighter;
+    font-family: "Heilvetica", "Helvetica Neue", "Helvetica", "Arial";
     line-height: 1.5em;
 }
-
-header { @include clearfix; }
 
 h1, .h1 {
     @include left-column;
