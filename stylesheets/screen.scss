@@ -81,9 +81,13 @@ section {
 }
 
 footer {
-    @include both-columns;
-    margin-top: 2em;
-    background-color: palegoldenrod;
+    @include clearfix;
+    clear: both;
+    background-color: grey;
+    p {
+        text-align: right;
+        @include both-columns;
+    }
 }
 
 #members {

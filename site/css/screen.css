@@ -419,22 +419,28 @@ section {
 
 /* line 83, ../../stylesheets/screen.scss */
 footer {
+  overflow: hidden;
+  *zoom: 1;
+  clear: both;
+  background-color: grey;
+}
+/* line 87, ../../stylesheets/screen.scss */
+footer p {
+  text-align: right;
   width: 920px;
   margin-left: 10px;
   margin-right: 10px;
   clear: both;
   float: left;
-  margin-top: 2em;
-  background-color: palegoldenrod;
 }
 
-/* line 90, ../../stylesheets/screen.scss */
+/* line 94, ../../stylesheets/screen.scss */
 #members article {
   border-bottom: 1px solid #999;
   padding-bottom: 1.5em;
   margin-bottom: 3em;
 }
-/* line 95, ../../stylesheets/screen.scss */
+/* line 99, ../../stylesheets/screen.scss */
 #members article img {
   float: right;
   width: 150px;
@@ -445,15 +451,15 @@ footer {
   -khtml-border-radius: 5px;
   border-radius: 5px;
 }
-/* line 100, ../../stylesheets/screen.scss */
+/* line 104, ../../stylesheets/screen.scss */
 #members article header, #members article div {
   margin-right: 160px;
 }
-/* line 103, ../../stylesheets/screen.scss */
+/* line 107, ../../stylesheets/screen.scss */
 #members article h3, #members article p {
   margin-top: 0;
 }
-/* line 104, ../../stylesheets/screen.scss */
+/* line 108, ../../stylesheets/screen.scss */
 #members article h3 {
   font-size: 1.25em;
   margin-bottom: 0.2em;
