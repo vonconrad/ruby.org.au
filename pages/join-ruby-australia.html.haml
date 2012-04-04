@@ -1,30 +1,31 @@
-%h1 Join Ruby Australia
+%h3 Join Ruby Australia
 
-%form{method: 'post', action: 'https://docs.google.com/spreadsheet/formResponse?formkey=dHZnUGlzcG5ibDJUcGZGY252T1NIQVE6MQ&amp;ifq'}
-  %fieldset
-    %label{for: 'first_name'} First Name
-    %input{name: 'entry.1.single', id: 'first_name'}
+%section
+  %form{method: 'post', action: 'https://docs.google.com/spreadsheet/formResponse?formkey=dHZnUGlzcG5ibDJUcGZGY252T1NIQVE6MQ&amp;ifq'}
+    %fieldset
+      %label{for: 'first_name'} First Name
+      %input{name: 'entry.1.single', id: 'first_name'}
+      
+      %label{for: 'last_name'} Last Name
+      %input{name: 'entry.0.single', id: 'last_name'}
     
-    %label{for: 'last_name'} Last Name
-    %input{name: 'entry.0.single', id: 'last_name'}
-  
-  %fieldset
-    %label{for: 'email'} E-Mail
-    %input{name: 'entry.2.single', id: 'email'}
-  
-  %fieldset
-    %label{for: 'twitter'} Twitter
-    %input{name: 'entry.9.single', id: 'twitter'}
-  
-  %fieldset
-    %label{for: 'home_address'} Home address
-    %input{name: 'entry.3.single', id: 'home_address'}
-  
-    %label{for: 'city'} City
-    %input{name: 'entry.5.single', id: 'city'}
+    %fieldset
+      %label{for: 'email'} E-Mail
+      %input{name: 'entry.2.single', id: 'email'}
     
-    %label{for: 'state'} State
-    %input{name: 'entry.6.single', id: 'state'}
+    %fieldset
+      %label{for: 'twitter'} Twitter
+      %input{name: 'entry.9.single', id: 'twitter'}
     
-    %label{for: 'postcode'} Postcode
-    %input{name: 'entry.7.single', id: 'postcode'}
+    %fieldset
+      %label{for: 'home_address'} Home address
+      %input{name: 'entry.3.single', id: 'home_address'}
+    
+      %label{for: 'city'} City
+      %input{name: 'entry.5.single', id: 'city'}
+      
+      %label{for: 'state'} State
+      %input{name: 'entry.6.single', id: 'state'}
+      
+      %label{for: 'postcode'} Postcode
+      %input{name: 'entry.7.single', id: 'postcode'}
