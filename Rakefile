@@ -3,8 +3,6 @@ require "bundler/setup"
 
 require "tilt"
 
-PAGES = %w(index)
-
 task :default => 'build:all'
 
 namespace :build do
@@ -33,11 +31,15 @@ namespace :build do
   desc "Build the page templates, outputting to ./site"
   task :pages do
     layout = Tilt.new('layout.html.haml')
-    PAGES.each do |template|
-      puts "Rendering pages/#{template}"
-      File.open("site/#{template}.html", "w") do |f|
+    pages = Dir.glob("pages/**/*.html.*")
+    pages.each do |template|
+      output_path = template.gsub(/^pages/, 'site').gsub(File.extname(template), '')
+      puts "Rendering #{template}"
+      puts "  to #{output_path}"
+      FileUtils.mkdir_p(File.expand_path(File.dirname(output_path)))
+      File.open(output_path, "w") do |f|
         f << layout.render do
-          Tilt.new("pages/#{template}.html.haml").render
+          Tilt.new(template).render
         end
       end
     end
