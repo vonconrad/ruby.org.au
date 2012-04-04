@@ -427,3 +427,25 @@ footer {
   margin-top: 2em;
   background-color: palegoldenrod;
 }
+
+/* line 90, ../../stylesheets/screen.scss */
+#members article {
+  border-bottom: 1px solid #999;
+  padding-bottom: 1.5em;
+  margin-bottom: 3em;
+}
+/* line 95, ../../stylesheets/screen.scss */
+#members article img {
+  float: right;
+  width: 150px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 100, ../../stylesheets/screen.scss */
+#members article header, #members article div {
+  margin-right: 160px;
+}

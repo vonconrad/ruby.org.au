@@ -85,3 +85,20 @@ footer {
     margin-top: 2em;
     background-color: palegoldenrod;
 }
+
+#members {
+  article {
+    border-bottom: 1px solid #999;
+    padding-bottom: 1.5em;
+    margin-bottom: 3em;
+
+    img {
+      float: right;
+      width: 150px;
+      @include border-radius(5px);
+    }
+    header, div {
+      margin-right: 160px;
+    }
+  }
+}
