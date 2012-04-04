@@ -8,3 +8,7 @@ guard :shell do
   watch(%r{^layout.html.haml$}) { `rake build:pages` }
   watch(%r{^pages/.+\.html\.haml}) { `rake build:pages` }
 end
+
+guard 'livereload' do
+  watch(%r{^site(/.+)}) { |path| path }
+end
