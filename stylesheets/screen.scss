@@ -60,8 +60,11 @@ h2, .h2 {
     font-size: 1em;
 }
 
-nav {
+#meta {
     @include left-column;
+}
+
+nav {
     ul { padding-left: 0; }
 
     * {
