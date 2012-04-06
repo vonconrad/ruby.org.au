@@ -453,8 +453,6 @@ nav * {
 /* Index page */
 /* line 74, ../../stylesheets/screen.scss */
 #mission-statement {
-  position: relative;
-  margin-top: -6em;
   font-size: 150%;
   font-weight: bold;
   line-height: 1.5em;
