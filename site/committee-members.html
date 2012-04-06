@@ -11,17 +11,12 @@
     <script src='/js/modernizr.min.js'></script>
   </head>
   <body>
-    <header>
+    <header role='banner'>
       <a href='/'>
-        <h1>Ruby Australia</h1>
+        <span class='logo'>Ruby Australia</span>
       </a>
-      <p class='h2' id='mission-statement'>
-        The founding purpose of Ruby Australia is to further the use and adoption of
-        the Ruby programming language in Australia, and to support and encourage a
-        vibrant community around the language and related technologies.
-      </p>
     </header>
-    <div id='meta'>
+    <aside id='meta'>
       <nav role='navigation'>
         <ul>
           <li>
@@ -34,106 +29,108 @@
       <p>
         Twitter: <a href="http://twitter.com/rubyaustralia">@rubyaustralia</a>
       </p>
-    </div>
-    <section id='members'>
-      <header>
-        <h3>Committee Members</h3>
-      </header>
-      <article>
-        <img src='/images/committee-members/keith-avatar.jpg' />
+    </aside>
+    <section role='main'>
+      <section id='members'>
         <header>
-          <h3>Keith Pitty</h3>
-          <p class='position'>President</p>
+          <h1>Committee Members</h1>
         </header>
-        <div class='bio'>
-          <p>Keith is a regular organiser of and presenter at Sydney Ruby meetups, led the organisation of Railscamp 9 at Lake Ainsworth and has committed to ensuring that the inaugural Australian Ruby Conference becomes a reality. He runs <a href="http://www.cockatoosoftware.com.au">Cockatoo Software</a>.</p>
-          <p>Away from computers, he loves sport, especially cricket, golf and Aussie Rules. Oh, and single malt whisky.</p>
-        </div>
-        <div class='contact'>
-          <a href='http://twitter.com/keithpitty'>@keithpitty</a>
-          <a href='http://au.linkedin.com/in/keithpitty'>LinkedIn</a>
-          <a href='https://github.com/keithpitty'>Github</a>
-        </div>
-      </article>
-      <article>
-        <img src='/images/committee-members/nigel-avatar.jpg' />
-        <header>
-          <h3>Nigel Rausch</h3>
-          <p class='position'>Vice-President</p>
-        </header>
-        <div class='bio'>
-          <p>Nigel has a strong community spirit and is heavily involved organising Brisbane’s Ruby, Javascript and WorkAtJelly meetups as well as mentoring friends and ex-colleagues in their business ventures.</p>
-          <p>He is proud to be part of the Ruby Australia Association and is excited how it will make Ruby more visible to the wider community and to the Enterprise.</p>
-        </div>
-        <div class='contact'>
-          <a href='http://twitter.com/NR99'>@NR99</a>
-          <a href='http://www.linkedin.com/in/nigelrausch'>Linkedin</a>
-        </div>
-      </article>
-      <article>
-        <img src='/images/committee-members/richie-avatar.jpg' />
-        <header>
-          <h3>Richie Khoo</h3>
-          <p class='position'>Secretary</p>
-        </header>
-        <div class='bio'>
-          <p>Richie is a passionate Ruby Developer who recently moved to Adelaide but still moonlights in Melbourne.</p>
-          <p>A member of Inspire 9 CoWorking and co-founder of AngelCube.com Melbourne's first startup venture accelerator, he is currently working on his own startup, NakedInsights an automation tool for Financial Advisers, and has a passion for helping people bring projects to reality.</p>
-        </div>
-        <div class='contact'>
-          <a href='http://twitter.com/evolve2k'>@evolve2k</a>
-          <a href='http://au.linkedin.com/in/richiekhoo'>LinkedIn</a>
-          <a href='https://github.com/evolve2k'>Github</a>
-          <a href='http://zerply.com/richie'>Zerply</a>
-        </div>
-      </article>
-      <article>
-        <img src='/images/committee-members/sebastian-avatar.jpg' />
-        <header>
-          <h3>Sebastian von Conrad</h3>
-          <p class='position'>Treasurer</p>
-        </header>
-        <div class='bio'>
-          <p>After growing up in Sweden, Sebastian escaped to the US in 2007 and moved down under in 2009. He now lives in Adelaide with his partner and two fur children, and works as the software development manager at <a href="http://www.echannelsearch.com">e-channel search</a>. He is also a certified baseball nut. Having organised Railscamp X, he is excited to continue working with the Australian Ruby community.</p>
-        </div>
-        <div class='contact'>
-          <a href='http://twitter.com/vonconrad'>@vonconrad</a>
-          <a href='http://au.linkedin.com/in/vonconrad'>LinkedIn</a>
-          <a href='https://github.com/vonconrad'>Github</a>
-        </div>
-      </article>
-      <article>
-        <img src='/images/committee-members/ben-avatar.jpg' />
-        <header>
-          <h3>Ben Schwarz</h3>
-          <p class='position'>General Member</p>
-        </header>
-        <div class='bio'>
-          <p>Ben funds his love of good food (at home) and sake (in bars) by designing sophisticated web applications using standards-based technology.</p>
-          <p>He organised Railscamp 6, in Melbourne, helped run the Melbourne Ruby user group for a couple of years and more recently joined the W3C CSS Working group as an 'invited expert'. Otherwise, he runs <a href="http://theint.ro">The Intro</a>, which he runs to facilitate affordable, professional web focused events that would not exist otherwise.</p>
-        </div>
-        <div class='contact'>
-          <a href='http://twitter.com/benschwarz'>@benschwarz</a>
-          <a href='http://germanforblack.com'>Ben's site</a>
-        </div>
-      </article>
-      <article>
-        <img src='/images/committee-members/daniel-avatar.jpg' />
-        <header>
-          <h3>Daniel Draper</h3>
-          <p class='position'>General Member</p>
-        </header>
-        <div class='bio'>
-          <p>Dan is CEO of Rails dev shop, <a href="http://www.codefire.com/">Codefire</a> and has been working with Rails since 2006. He is actively involved in Adelaide.rb and the Ruby community at large. Dan is passionate about promoting software and web development as a career choice for younger people and about open source software in business.</p>
-        </div>
-        <div class='contact'>
-          <a href='http://twitter.com/danieldraper'>@danieldraper</a>
-          <a href='http://www.linkedin.com/in/ddraper'>Linkedin</a>
-        </div>
-      </article>
+        <article>
+          <img src='/images/committee-members/keith-avatar.jpg' />
+          <header>
+            <h3>Keith Pitty</h3>
+            <p class='position'>President</p>
+          </header>
+          <div class='bio'>
+            <p>Keith is a regular organiser of and presenter at Sydney Ruby meetups, led the organisation of Railscamp 9 at Lake Ainsworth and has committed to ensuring that the inaugural Australian Ruby Conference becomes a reality. He runs <a href="http://www.cockatoosoftware.com.au">Cockatoo Software</a>.</p>
+            <p>Away from computers, he loves sport, especially cricket, golf and Aussie Rules. Oh, and single malt whisky.</p>
+          </div>
+          <div class='contact'>
+            <a href='http://twitter.com/keithpitty'>@keithpitty</a>
+            <a href='http://au.linkedin.com/in/keithpitty'>LinkedIn</a>
+            <a href='https://github.com/keithpitty'>Github</a>
+          </div>
+        </article>
+        <article>
+          <img src='/images/committee-members/nigel-avatar.jpg' />
+          <header>
+            <h3>Nigel Rausch</h3>
+            <p class='position'>Vice-President</p>
+          </header>
+          <div class='bio'>
+            <p>Nigel has a strong community spirit and is heavily involved organising Brisbane’s Ruby, Javascript and WorkAtJelly meetups as well as mentoring friends and ex-colleagues in their business ventures.</p>
+            <p>He is proud to be part of the Ruby Australia Association and is excited how it will make Ruby more visible to the wider community and to the Enterprise.</p>
+          </div>
+          <div class='contact'>
+            <a href='http://twitter.com/NR99'>@NR99</a>
+            <a href='http://www.linkedin.com/in/nigelrausch'>Linkedin</a>
+          </div>
+        </article>
+        <article>
+          <img src='/images/committee-members/richie-avatar.jpg' />
+          <header>
+            <h3>Richie Khoo</h3>
+            <p class='position'>Secretary</p>
+          </header>
+          <div class='bio'>
+            <p>Richie is a passionate Ruby Developer who recently moved to Adelaide but still moonlights in Melbourne.</p>
+            <p>A member of Inspire 9 CoWorking and co-founder of AngelCube.com Melbourne's first startup venture accelerator, he is currently working on his own startup, NakedInsights an automation tool for Financial Advisers, and has a passion for helping people bring projects to reality.</p>
+          </div>
+          <div class='contact'>
+            <a href='http://twitter.com/evolve2k'>@evolve2k</a>
+            <a href='http://au.linkedin.com/in/richiekhoo'>LinkedIn</a>
+            <a href='https://github.com/evolve2k'>Github</a>
+            <a href='http://zerply.com/richie'>Zerply</a>
+          </div>
+        </article>
+        <article>
+          <img src='/images/committee-members/sebastian-avatar.jpg' />
+          <header>
+            <h3>Sebastian von Conrad</h3>
+            <p class='position'>Treasurer</p>
+          </header>
+          <div class='bio'>
+            <p>After growing up in Sweden, Sebastian escaped to the US in 2007 and moved down under in 2009. He now lives in Adelaide with his partner and two fur children, and works as the software development manager at <a href="http://www.echannelsearch.com">e-channel search</a>. He is also a certified baseball nut. Having organised Railscamp X, he is excited to continue working with the Australian Ruby community.</p>
+          </div>
+          <div class='contact'>
+            <a href='http://twitter.com/vonconrad'>@vonconrad</a>
+            <a href='http://au.linkedin.com/in/vonconrad'>LinkedIn</a>
+            <a href='https://github.com/vonconrad'>Github</a>
+          </div>
+        </article>
+        <article>
+          <img src='/images/committee-members/ben-avatar.jpg' />
+          <header>
+            <h3>Ben Schwarz</h3>
+            <p class='position'>General Member</p>
+          </header>
+          <div class='bio'>
+            <p>Ben funds his love of good food (at home) and sake (in bars) by designing sophisticated web applications using standards-based technology.</p>
+            <p>He organised Railscamp 6, in Melbourne, helped run the Melbourne Ruby user group for a couple of years and more recently joined the W3C CSS Working group as an 'invited expert'. Otherwise, he runs <a href="http://theint.ro">The Intro</a>, which he runs to facilitate affordable, professional web focused events that would not exist otherwise.</p>
+          </div>
+          <div class='contact'>
+            <a href='http://twitter.com/benschwarz'>@benschwarz</a>
+            <a href='http://germanforblack.com'>Ben's site</a>
+          </div>
+        </article>
+        <article>
+          <img src='/images/committee-members/daniel-avatar.jpg' />
+          <header>
+            <h3>Daniel Draper</h3>
+            <p class='position'>General Member</p>
+          </header>
+          <div class='bio'>
+            <p>Dan is CEO of Rails dev shop, <a href="http://www.codefire.com/">Codefire</a> and has been working with Rails since 2006. He is actively involved in Adelaide.rb and the Ruby community at large. Dan is passionate about promoting software and web development as a career choice for younger people and about open source software in business.</p>
+          </div>
+          <div class='contact'>
+            <a href='http://twitter.com/danieldraper'>@danieldraper</a>
+            <a href='http://www.linkedin.com/in/ddraper'>Linkedin</a>
+          </div>
+        </article>
+      </section>
     </section>
-    <footer>
-      <p>&copy; 2012 Ruby Australia</p>
+    <footer role='contentinfo'>
+      <small>&copy; 2012 Ruby Australia</small>
     </footer>
   </body>
 </html>

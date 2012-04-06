@@ -11,17 +11,12 @@
     <script src='/js/modernizr.min.js'></script>
   </head>
   <body>
-    <header>
+    <header role='banner'>
       <a href='/'>
-        <h1>Ruby Australia</h1>
+        <span class='logo'>Ruby Australia</span>
       </a>
-      <p class='h2' id='mission-statement'>
-        The founding purpose of Ruby Australia is to further the use and adoption of
-        the Ruby programming language in Australia, and to support and encourage a
-        vibrant community around the language and related technologies.
-      </p>
     </header>
-    <div id='meta'>
+    <aside id='meta'>
       <nav role='navigation'>
         <ul>
           <li>
@@ -34,10 +29,12 @@
       <p>
         Twitter: <a href="http://twitter.com/rubyaustralia">@rubyaustralia</a>
       </p>
-    </div>
-    <h3>RoRo Brisbane</h3>
-    <footer>
-      <p>&copy; 2012 Ruby Australia</p>
+    </aside>
+    <section role='main'>
+      <h3>RoRo Brisbane</h3>
+    </section>
+    <footer role='contentinfo'>
+      <small>&copy; 2012 Ruby Australia</small>
     </footer>
   </body>
 </html>

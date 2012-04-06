@@ -11,17 +11,12 @@
     <script src='/js/modernizr.min.js'></script>
   </head>
   <body>
-    <header>
+    <header role='banner'>
       <a href='/'>
-        <h1>Ruby Australia</h1>
+        <span class='logo'>Ruby Australia</span>
       </a>
-      <p class='h2' id='mission-statement'>
-        The founding purpose of Ruby Australia is to further the use and adoption of
-        the Ruby programming language in Australia, and to support and encourage a
-        vibrant community around the language and related technologies.
-      </p>
     </header>
-    <div id='meta'>
+    <aside id='meta'>
       <nav role='navigation'>
         <ul>
           <li>
@@ -34,44 +29,63 @@
       <p>
         Twitter: <a href="http://twitter.com/rubyaustralia">@rubyaustralia</a>
       </p>
-    </div>
-    <section id='meetups'>
-      <h3>Meetups</h3>
-      <p>
-        There are a number of regional Ruby-related meetups all over the country.
-        Each group is organised independently by its members, and all are very
-        welcoming to newcomers. The following groups meet regularly:
+    </aside>
+    <section role='main'>
+      <p id='mission-statement'>
+        The founding purpose of Ruby Australia is to further the use and adoption of
+        the Ruby programming language in Australia, and to support and encourage a
+        vibrant community around the language and related technologies.
       </p>
-      <p>
-        <a href='/meetups/roro-adl.html' id='roro-adl'>RoRo Adelaide</a>
-        <a href='/meetups/roro-bne.html' id='roro-bne'>RoRo Brisbane</a>
-        <a href='/meetups/roro-can.html' id='roro-can'>RoRo Canberra</a>
-        <a href='/meetups/roro-mel.html' id='roro-mel'>RoRo Melbourne</a>
-        <a href='/meetups/roro-per.html' id='roro-per'>RoRo Perth</a>
-        <a href='/meetups/roro-syd.html' id='roro-syd'>RoRo Sydney</a>
-      </p>
+      <section id='meetups'>
+        <h3>Meetups</h3>
+        <p>
+          There are a number of regional Ruby-related meetups all over the country.
+          Each group is organised independently by its members, and all are very
+          welcoming to newcomers. The following groups meet regularly:
+        </p>
+        <ul class='meetup-locations'>
+          <li>
+            <a href='/meetups/roro-adl.html' id='roro-adl'>RoRo Adelaide</a>
+          </li>
+          <li>
+            <a href='/meetups/roro-bne.html' id='roro-bne'>RoRo Brisbane</a>
+          </li>
+          <li>
+            <a href='/meetups/roro-can.html' id='roro-can'>RoRo Canberra</a>
+          </li>
+          <li>
+            <a href='/meetups/roro-mel.html' id='roro-mel'>RoRo Melbourne</a>
+          </li>
+          <li>
+            <a href='/meetups/roro-per.html' id='roro-per'>RoRo Perth</a>
+          </li>
+          <li>
+            <a href='/meetups/roro-syd.html' id='roro-syd'>RoRo Sydney</a>
+          </li>
+        </ul>
+      </section>
+      <section id='railscamp'>
+        <h3>Rails Camp</h3>
+        <p>
+          Ruby Australia is the organising body of Australian "Rails Camp" events.
+          Please see the official <a href="http://railscamps.com">Rails camp</a> site
+          for more details.
+        </p>
+      </section>
+      <section>
+        <h3>Join Ruby Australia</h3>
+        <p>
+          Joining Ruby Australia is free. <a href="/join-ruby-australia.html">Join!</a>
+        </p>
+        <h3>Contributing to the site</h3>
+        <p>
+          The site's source is hosted on Github:
+          <a href="https://github.com/rails-oceania/ruby.org.au">https://github.com/rails-oceania/ruby.org.au</a>.  Please refer to the <a href="https://github.com/rails-oceania/ruby.org.au#readme">README</a> there for more details.
+        </p>
+      </section>
     </section>
-    <section id='railscamp'>
-      <h3>Rails Camp</h3>
-      <p>
-        Ruby Australia is the organising body of Australian "Rails Camp" events.
-        Please see the official <a href="http://railscamps.com">Rails camp</a> site
-        for more details.
-      </p>
-    </section>
-    <section>
-      <h3>Join Ruby Australia</h3>
-      <p>
-        Joining Ruby Australia is free. <a href="/join-ruby-australia.html">Join!</a>
-      </p>
-      <h3>Contributing to the site</h3>
-      <p>
-        The site's source is hosted on Github:
-        <a href="https://github.com/rails-oceania/ruby.org.au">https://github.com/rails-oceania/ruby.org.au</a>.  Please refer to the <a href="https://github.com/rails-oceania/ruby.org.au#readme">README</a> there for more details.
-      </p>
-    </section>
-    <footer>
-      <p>&copy; 2012 Ruby Australia</p>
+    <footer role='contentinfo'>
+      <small>&copy; 2012 Ruby Australia</small>
     </footer>
   </body>
 </html>
