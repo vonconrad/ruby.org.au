@@ -3,65 +3,49 @@
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 
+@import "./respond_to";
+@import "./columns";
 @import "normalize";
 @import "compass/utilities";
 @import "compass/css3";
 @import "compass/typography/text/replacement";
 
-@mixin left-column {
-    width: 300px;
-    margin-left: 20px;
-    float: left;
-    clear: both;
-    @include clearfix;
-}
-
-@mixin right-column {
-    width: 610px;
-    margin-left: 10px;
-    margin-right: 20px;
-    float: right;
-    @include clearfix;
-}
-
-@mixin both-columns {
-    width: 920px;
-    margin-left: 10px;
-    margin-right: 10px;
-    clear: both;
-    float: left;
-}
+$ruby_au_red: #EE3A37;
 
 body {
-    width: 960px;
-    margin: 100px auto 0 auto;
-
-    color: #333333;
+  max-width: 960px;
+  margin: 100px auto 0 auto;
+  color: #333333;
+  font-family: "Heilvetica", "Helvetica Neue", "Helvetica", "Arial";
+  line-height: 1.5em;
 }
 
-body * {
-    font-family: "Heilvetica", "Helvetica Neue", "Helvetica", "Arial";
-    line-height: 1.5em;
-}
 
-header {
-  @include clearfix;
-}
-
-h1, .h1 {
-    @include left-column;
-    @include replace-text("ruby-australia-logo.png");
-    width: 124px;
-    height: 129px;
-}
-
+/* Header levels */
 h2, .h2 {
     @include right-column;
     font-size: 1em;
 }
 
-#meta {
+h3 { color: $ruby_au_red; margin: 0; }
+h3 + p { margin-top: 0.5em; }
+
+/* Global layout */
+
+header[role='banner'] { 
+  @include respond-to(tablet) { float: left; margin-right: 1em; }
+  
+  .logo {
     @include left-column;
+    @include replace-text("ruby-australia-logo.png");
+    width: 124px;
+    height: 129px;
+  }
+}
+
+#meta { 
+  @include left-column;  
+  @include respond-to(tablet) { clear: none; }
 }
 
 nav {
@@ -72,27 +56,34 @@ nav {
     }
 }
 
-section {
-    @include right-column;
+[role='main'] {
+  @include right-column;
+  @include respond-to(tablet) { float: none; margin: 0 17px; width: 90%; }
+  
+  & section { margin-bottom: 5em; }
 }
 
-#meetups a {
-  display: block;
+.meetup-locations {
+  margin: 0; padding: 0;
+  
+  & li { display: block; }
 }
 
-footer {
-    @include clearfix;
-    clear: both;
-    background-color: grey;
-    p {
-        text-align: right;
-        @include both-columns;
-    }
+
+/* Index page */
+#mission-statement { 
+  @include respond_to(narrow) { font-weight: normal; font-size: 1.1em; }
+  
+  position: relative; margin-top: -6em; font-size: 150%; font-weight: bold; line-height: 1.5em; margin-bottom: 2em;
 }
 
+
+/* Committee members page */
 #members {
   article {
     border-bottom: 1px solid #999;
+    &:last-child { border: 0; }
+    
     padding-bottom: 1.5em;
     margin-bottom: 3em;
 
@@ -105,6 +96,9 @@ footer {
       margin-right: 160px;
     }
     h3, p { margin-top: 0; }
+    
+    .position { font-size: 0.9em; font-style: italic; color: #777; }
+    
     h3 {
       font-size: 1.25em; 
       margin-bottom: 0.2em;
@@ -133,4 +127,14 @@ label {
 input {
   margin-bottom: 0.5em;
   width: 300px;
+}
+
+
+footer[role="contentinfo"] {
+    @include clearfix;
+    clear: both;
+    
+    padding: 2em 0;
+    
+    small { @include both-columns; font-size: 0.7em; color: #999; }
 }

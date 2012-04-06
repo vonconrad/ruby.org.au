@@ -11,15 +11,10 @@
     %link{rel: 'stylesheet', href: '/css/screen.css'}
     %script{src: '/js/modernizr.min.js'}
   %body
-    %header
+    %header{role: 'banner'}
       %a{href: '/'}
-        %h1 Ruby Australia
-      %p#mission-statement.h2
-        The founding purpose of Ruby Australia is to further the use and adoption of
-        the Ruby programming language in Australia, and to support and encourage a
-        vibrant community around the language and related technologies.
-
-    #meta
+        %span.logo Ruby Australia
+    %aside#meta
       %nav{role: 'navigation'}
         %ul
           %li
@@ -29,8 +24,9 @@
 
       %p
         Twitter: <a href="http://twitter.com/rubyaustralia">@rubyaustralia</a>
-
-    = yield
     
-    %footer
-      %p &copy; 2012 Ruby Australia
+    %section{role: 'main'}
+      = yield
+    
+    %footer{role: 'contentinfo'}
+      %small &copy; 2012 Ruby Australia
