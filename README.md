@@ -43,7 +43,7 @@ As a contributor, your workflow would look something like this:
 # ruby.org.au repository, and `origin` is your own fork.
 
 # Make sure you're building on the most up-to-date version
-git fetch upstream && git merge origin/upstream
+git fetch upstream && git merge upstream/master
 # Do some edits
 # ...
 # If you're not running guard, build the site
