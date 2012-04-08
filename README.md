@@ -71,10 +71,9 @@ rake build:all
 git add site
 git commit -m "Committing changes to the generated site"
 git push origin master
-# Copy the subtree 'site' to the root of the 'gh-pages' branch
+
+# Update the gh-pages branch and push to github
 rake deploy
-# SHIPIT
-git push origin gh-pages
 ```
 
 If there were changes in `site`, someone forgot to commit the generated output
