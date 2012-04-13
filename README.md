@@ -2,7 +2,7 @@
 
 The `ruby.org.au` site is a static site hosted with Github Pages.
 
-* Content is in `/pages` as ERB templates
+* Content is in `/pages` as Haml templates
 * Styles are `/stylesheets`, compiled using compass
 
 ## How to Contribute
@@ -49,7 +49,7 @@ git fetch upstream && git merge upstream/master
 # If you're not running guard, build the site
 rake build:all
 # Once you're happy, commit both the source files and the output:
-git add pages/my-awesome-page.html.erb
+git add pages/my-awesome-page.html.haml
 git add site/my-awesome-page.html
 git commit -m "Add an awesome page"
 # Push your changes
