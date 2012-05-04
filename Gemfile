@@ -7,6 +7,7 @@ gem "compass", "0.12.1"
 gem "compass-normalize"
 gem "tilt", "~> 1.3.3"
 gem "rake"
+gem 'maruku'
 
 gem "guard", "~> 1.0.0"
 gem "guard-shell"
