@@ -20,6 +20,16 @@ body {
   line-height: 1.5em;
 }
 
+/* Anchor styles */
+a { color: #C92828; }
+a:hover {
+  color: #EE3A37;
+  border-bottom: 1px dotted #EE3A37;
+}
+a:active {
+  color: #FF5454;
+  border-bottom: 1px dotted #ff5454;
+}
 
 /* Header levels */
 h2, .h2 {
