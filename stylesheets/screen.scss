@@ -37,7 +37,7 @@ h2, .h2 {
     font-size: 1em;
 }
 
-h3 { color: $ruby_au_red; margin: 0; }
+h2, h3 { color: $ruby_au_red; margin: 0; }
 h3 + p { margin-top: 0.5em; }
 
 /* Global layout */
