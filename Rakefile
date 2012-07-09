@@ -31,7 +31,7 @@ namespace :build do
   desc "Build the page templates, outputting to ./site"
   task :pages do
     layout = Tilt.new('layout.html.haml')
-    pages = Dir.glob("pages/**/*.{html,md}*")
+    pages = Dir.glob("pages/**/*.html.*")
     p pages
     pages.each do |template|
       output_path = template.gsub(/^pages/, 'site').gsub(File.extname(template), '')
