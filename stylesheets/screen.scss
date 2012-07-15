@@ -57,6 +57,9 @@ header[role='banner'] {
   @include left-column;  
   @include respond-to(tablet) { clear: none; }
 }
+#meta a { border-bottom: 1px solid transparent; }
+#meta a:hover { border-bottom: 1px dotted #ff5454; }
+
 
 nav {
     ul { padding-left: 0; }
