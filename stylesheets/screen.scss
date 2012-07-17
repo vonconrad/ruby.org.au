@@ -62,11 +62,12 @@ header[role='banner'] {
 
 
 nav {
-    ul { padding-left: 0; }
-
-    * {
-        display: block;
+  ul {
+    padding-left: 0;
+    li {
+      display: block;
     }
+  }
 }
 
 [role='main'] {
