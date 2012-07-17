@@ -14,7 +14,7 @@ $ruby_au_red: #EE3A37;
 
 body {
   max-width: 960px;
-  margin: 100px auto 0 auto;
+  margin: 80px auto 0 auto;
   color: #333333;
   font-family: "Heilvetica", "Helvetica Neue", "Helvetica", "Arial";
   line-height: 1.5em;
@@ -49,7 +49,7 @@ header[role='banner'] {
   @include respond-to(tablet) { float: left; margin-right: 1em; }
 
   overflow: hidden;
-  padding-bottom: 20px;
+  padding-bottom: 40px;
   .logo {
     @include left-column;
     @include replace-text("ruby-australia-logo.png");
