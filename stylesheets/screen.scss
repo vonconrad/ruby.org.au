@@ -21,14 +21,15 @@ body {
 }
 
 /* Anchor styles */
-a { color: #C92828; }
-a:hover {
-  color: #EE3A37;
-  border-bottom: 1px dotted #EE3A37;
-}
-a:active {
-  color: #FF5454;
-  border-bottom: 1px dotted #ff5454;
+a {
+  $link-color: #C92828;
+  color: $link-color;
+  &:hover {
+    color: lighten($link-color, 15%);
+  }
+  &:active {
+    color: lighten($link-color, 25%);
+  }
 }
 
 /* Header levels */
@@ -57,9 +58,6 @@ header[role='banner'] {
   @include left-column;  
   @include respond-to(tablet) { clear: none; }
 }
-#meta a { border-bottom: 1px solid transparent; }
-#meta a:hover { border-bottom: 1px dotted #ff5454; }
-
 
 nav {
   ul {
