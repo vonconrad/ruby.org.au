@@ -47,7 +47,9 @@ h3 + p { margin-top: 0.5em; }
 
 header[role='banner'] { 
   @include respond-to(tablet) { float: left; margin-right: 1em; }
-  
+
+  overflow: hidden;
+  padding-bottom: 20px;
   .logo {
     @include left-column;
     @include replace-text("ruby-australia-logo.png");
@@ -62,7 +64,9 @@ header[role='banner'] {
 }
 
 nav {
+  padding-top: 0.3em; // to align visually with the mission statement's larger type.
   ul {
+    margin-top: 0;
     padding-left: 0;
     li {
       display: block;
@@ -88,7 +92,11 @@ nav {
 #mission-statement { 
   @include respond_to(narrow) { font-weight: normal; font-size: 1.1em; }
   
-  font-size: 150%; font-weight: bold; line-height: 1.5em; margin-bottom: 2em;
+  font-size: 150%;
+  font-weight: bold;
+  line-height: 1.5em;
+  margin-top: 0;
+  margin-bottom: 2em;
 }
 
 
